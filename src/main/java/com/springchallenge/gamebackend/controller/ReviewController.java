@@ -17,6 +17,7 @@ import com.springchallenge.gamebackend.dto.input.review.UpdateReviewDto;
 import com.springchallenge.gamebackend.dto.output.review.ReviewDtoOutput;
 import com.springchallenge.gamebackend.dto.input.review.ReviewFilterCriteria;
 
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/reviews")
 public class ReviewController {

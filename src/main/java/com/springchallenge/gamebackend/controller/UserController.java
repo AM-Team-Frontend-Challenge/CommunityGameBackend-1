@@ -15,6 +15,8 @@ import com.springchallenge.gamebackend.dto.output.user.UserDtoSignUp;
 
 import javax.validation.Valid;
 
+@CrossOrigin(origins = "http://localhost:8081")
+
 @RestController
 public class UserController {
 

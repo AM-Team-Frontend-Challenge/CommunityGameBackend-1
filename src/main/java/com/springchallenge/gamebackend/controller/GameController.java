@@ -19,6 +19,7 @@ import com.springchallenge.gamebackend.dto.input.gamestate.GameStateDto;
 import com.springchallenge.gamebackend.dto.input.game.GameFilterCriteria;
 import com.springchallenge.gamebackend.service.gamestate.GameStateService;
 
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/games")
 public class GameController {
@@ -34,6 +35,7 @@ public class GameController {
         this.userService = userService;
         this.gameStateService = gameStateService;
     }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<GameDto> getGame(@PathVariable String id) {
